@@ -1,5 +1,6 @@
 :root {
   --theme-grey: #989898;
+  --theme-dark: #5c5c5c;
 }
 
 html,
@@ -10,17 +11,113 @@ body {
   scroll-behavior: smooth;
 }
 
-section{
-  height: 1200px;
+p {
+  margin: 0;
 }
 
 #book-section{
   padding-top:100px;
+  padding-bottom:100px;
 }
 
 #faq-section{
   background: var(--theme-grey);
   padding-top:100px;
+}
+
+.book-wrapper{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.cover-img-wrapper{
+  display: inline-block;
+  width: 40%;
+  float: left;
+}
+
+.sale-text-wrapper{
+  display: inline-block;
+  width: 55%;
+}
+
+.cover-img{
+  display: inline-block;
+  width: 85%;
+}
+
+.cta-button{
+  display: inline-block;
+  border: 2px solid black;
+  padding: 12px;
+  padding-left:20px;
+  padding-right:20px;
+  border-radius: 2em;
+  transition: 0.2s;
+  font-size: 1.15em;
+  font-weight: bold;
+  margin-bottom: 25px;
+  background-color: black;
+  color: #fff;
+}
+
+.cta-button:hover{
+  cursor: pointer;
+  border-radius:0.6em;
+  padding-left:25px;
+  padding-right:25px;
+}
+
+.weak-button{
+  display: inline-block;
+  border: 1px solid var(--theme-grey);
+  color: var(--theme-dark);
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right:10px;
+  border-radius: 2em;
+  transition: 0.2s;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.weak-button:hover{
+  cursor: pointer;
+  border-radius: 0.6em;
+  border: 1px solid black;
+  color: black;
+}
+
+.weak-button-wrapper{
+  padding-top: 15px;
+}
+
+.sale-description{
+  font-size: 1.4em;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.sale-quote{
+  /*font-family: 'Kalam', cursive;*/
+  font-style: italic;
+  font-size: 1.25em;
+  font-weight: 300;
+  padding-top: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.sale-quote-person{
+  font-size: 1em;
+  padding-bottom: 25px;
+  text-align: right;
+  padding-right: 10%;
 }
 
 #nav-logo{
@@ -33,9 +130,7 @@ section{
   position: fixed;
   right:36px;
   top: 36px;
-
 }
-
 
 .header-wrapper {
   width: 100%;
@@ -66,7 +161,7 @@ section{
   text-decoration: none;
   color: var(--theme-grey);
   transition: 500ms;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .sticky-header a:hover{
