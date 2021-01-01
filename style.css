@@ -1,0 +1,92 @@
+:root {
+  --theme-grey: #989898;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+section{
+  height: 1200px;
+}
+
+#book-section{
+  padding-top:100px;
+}
+
+#faq-section{
+  background: var(--theme-grey);
+  padding-top:100px;
+}
+
+#nav-logo{
+  width: 100px;
+  padding-top: 30.8px;
+  padding-left: 30.8px;
+}
+
+#nav-links{
+  position: fixed;
+  right:36px;
+  top: 36px;
+
+}
+
+
+.header-wrapper {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: var(--theme-grey);
+}
+
+.sticky-header {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  position: static;
+  /*top: -100px;*/
+  height: 100px;
+}
+
+.sticky-header a{
+  font-size: 28px;
+  position: relative;
+  bottom: 6px;
+  margin-left:30px;
+  margin-right:30px;
+  text-decoration: none;
+  color: var(--theme-grey);
+  transition: 500ms;
+  border-bottom: 2px solid transparent;
+}
+
+.sticky-header a:hover{
+  border-color: var(--theme-grey);
+}
+
+.sticky-header.sticky a{
+  color: #fff;
+}
+.sticky-header.sticky a:hover{
+  border-color: #fff;
+}
+
+.sticky-header.sticky {
+  background: var(--theme-grey);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
