@@ -1,6 +1,7 @@
 :root {
   --theme-grey: #989898;
   --theme-dark: #5c5c5c;
+  --theme-light: #d6d6d6;
 }
 
 html,
@@ -21,8 +22,20 @@ p {
 }
 
 #faq-section{
-  background: var(--theme-grey);
+  background: var(--theme-dark);
   padding-top:100px;
+  color: #fff;
+}
+
+#faq-section a{
+  text-decoration: underline;
+  color: var(--theme-light);
+  transition: 0.2s;
+}
+
+#faq-section a:hover{
+  text-decoration: underline;
+  color: #fff;
 }
 
 .book-wrapper{
@@ -120,6 +133,27 @@ p {
   padding-right: 10%;
 }
 
+.faq-wrapper{
+  width: 60%;
+  margin-left:20%;
+  margin-right:20%;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.faq-question{
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.faq-answer{
+  font-size: 1.2em;
+  padding-bottom: 45px;
+  padding-top: 10px;
+  line-height: 1.4em;
+}
+
 #nav-logo{
   width: 100px;
   padding-top: 30.8px;
@@ -140,7 +174,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  color: var(--theme-grey);
+  color: var(--theme-dark);
 }
 
 .sticky-header {
@@ -159,13 +193,13 @@ p {
   margin-left:30px;
   margin-right:30px;
   text-decoration: none;
-  color: var(--theme-grey);
+  color: var(--theme-dark);
   transition: 500ms;
   border-bottom: 1px solid transparent;
 }
 
 .sticky-header a:hover{
-  border-color: var(--theme-grey);
+  border-color: var(--theme-dark);
 }
 
 .sticky-header.sticky a{
@@ -176,7 +210,7 @@ p {
 }
 
 .sticky-header.sticky {
-  background: var(--theme-grey);
+  background: var(--theme-dark);
   position: fixed;
   top: 0;
   left: 0;
