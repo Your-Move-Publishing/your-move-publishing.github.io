@@ -77,12 +77,36 @@ p {
   color: #fff;
 }
 
+#buy-teach-book::before{
+  content:"Get The "
+}
+
+#buy-teach-book::after{
+  content: " - $25"
+}
+
+#buy-teach-book:hover::before{
+  content:"Order "
+}
+
+#buy-teach-book:hover::after{
+  content: " Now!"
+}
+
 .cta-button:hover{
   cursor: pointer;
   border-radius:0.6em;
   padding-left:25px;
   padding-right:25px;
+  color: black;
+  background-color: white;
 }
+
+/*
+.cta-button:hover::after{
+  content:"!!!"
+}
+*/
 
 .weak-button{
   display: inline-block;
@@ -103,6 +127,14 @@ p {
   border-radius: 0.6em;
   border: 1px solid black;
   color: black;
+}
+
+.preview::before {
+  content: "Peek inside!";
+}
+
+.preview:hover::before {
+  content: "Preview PDF";
 }
 
 .weak-button-wrapper{
