@@ -77,6 +77,20 @@ p {
   color: #fff;
 }
 
+.cta-replace{
+  border: 2px solid transparent;
+  padding: 12px;
+  padding-left:20px;
+  padding-right:20px;
+  border-radius: 2em;
+  transition: 0.2s;
+  font-size: 1.15em;
+  font-weight: bold;
+  margin-bottom: 25px;
+  display: none;
+  color: var(--theme-grey);
+}
+
 #buy-teach-book::before{
   content:"Get The "
 }

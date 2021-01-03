@@ -27,7 +27,8 @@
           <img class="cover-img" src="teach-front-cover.png"/>
         </div>
         <div class="sale-text-wrapper">
-          <div id="buy-teach-book" class="cta-button">Paperback</div>
+          <div id="buy-teach-book" class="cta-button" onclick="teachBookGoToStripe()">Paperback</div>
+          <div id="buy-teach-redirecting" class="cta-replace">Loading Checkout</div>
           <!--<p class="sale-description">Coach Andy shares hard-earned stories and essential lessons to make chess easy, intuitive, and educational for beginners of all ages. A must-read guide for anyone teaching chess.
           </p>-->
           <p class="sale-description">The must-read guide for anyone teaching chess to beginners. Get ready to explore key fundamentals by playing together and having a great time!</p>
@@ -54,10 +55,17 @@
         </div>
 
         <div class="faq-question">
+          Refunds and returns?
+        </div>
+        <div class="faq-answer">
+          Your purchase is non-refundable and non-returnable. We do not have the capacity to support such services and guarantees. That said, we always try take responsibility above and beyond what a reasonable person might expect. Please <a href="/">contact us</a> if you have any problems, concerns, feedback, or happy fun whimsical notes and stories that let us know we're doing something right. "I would rather return my arm than your book because it's so great!"
+        </div>
+
+        <div class="faq-question">
           What if I can't afford a book?
         </div>
         <div class="faq-answer">
-          We aim to spread valuable ideas by empowering folks to take initiative. Our mission is in our name! <a href="/">Let us know</a> your circumstances, and we'll do our best to remove lack of resources as an obstacle to access.
+          We share valuable ideas by empowering folks to take initiative. Our mission is in our name! <a href="/">Let us know</a> your circumstances, and we'll do our best to remove lack of resources as an obstacle to access.
         </div>
 
         <div class="faq-question">
@@ -83,6 +91,9 @@
 
       </div>
     </section>
+
+    <script src="https://js.stripe.com/v3/"></script>
     <script src="code.js"></script>
+
   </body>
 </html>
