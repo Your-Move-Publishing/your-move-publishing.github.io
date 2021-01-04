@@ -12,6 +12,10 @@ body {
   scroll-behavior: smooth;
 }
 
+#success-page {
+  background: var(--theme-dark);
+}
+
 p {
   margin: 0;
 }
@@ -200,7 +204,7 @@ p {
   line-height: 1.4em;
 }
 
-#nav-logo{
+.nav-logo{
   width: 100px;
   padding-top: 30.8px;
   padding-left: 30.8px;
@@ -264,4 +268,35 @@ p {
   z-index: 999px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   color: #fff;
+}
+
+
+#success-back{
+  margin-bottom: 0;
+}
+
+#success-redirecting{
+  margin-bottom: 0;
+}
+
+#success-logo {
+  padding: 0;
+  padding-top: 7px;
+}
+
+.success-logo-wrapper {
+  display: inline-block;
+  text-align: right;
+  float: right;
+  padding-right: 5%;
+  bottom: 25px;
+}
+
+.flip {
+  display: inline-block;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }

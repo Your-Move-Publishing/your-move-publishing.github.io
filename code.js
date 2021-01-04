@@ -1,5 +1,33 @@
 var stripe = Stripe('pk_live_51I4z07DmqJwbTDJD2MyELRnWhxe0lFQnO9wyCAdAq0OfTXiKqHkj8e5j98AezGqPX9r2NSUWzNfQG7lUEdp9cmu400kpwTjeAs');
 
+function successGoBack(){
+  var cta_button = document.getElementById("success-back");
+  var cta_replace = document.getElementById("success-redirecting");
+
+  cta_button.style.display = "none";
+  cta_replace.style.display = "inline-block";
+
+  window.location.replace("https://yourmovepublishing.com");
+
+  var dot_count = 0;
+  var dotTrigger = setInterval(loadDots, 333);
+  function loadDots() {
+    if (dot_count >= 15){
+      stopDots();
+      return;
+    }
+    cta_replace.innerHTML += ' .';
+    dot_count += 1;
+    return;
+  }
+  function stopDots(){
+    clearInterval(dotTrigger);
+    cta_replace.innerHTML = 'Redirecting';
+    cta_button.style.display = "inline-block";
+    cta_replace.style.display = "none";
+  }
+}
+
 function teachBookGoToStripe(){
   /*$("#buy-teach-book").fadeToggle(3000);
   $("#buy-teach-book").fadeToggle(3000);*/
@@ -54,6 +82,7 @@ function teachBookGoToStripe(){
     cta_replace.innerHTML += ' Sorry, 5 seconds have passed. You can continue waiting, or refresh the page and try again.';
   }
 
+  return;
 }
 
 

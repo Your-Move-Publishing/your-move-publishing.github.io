@@ -6,15 +6,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!--<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <header class="header-wrapper">
       <div class="sticky-header">
-        <img id="nav-logo" src="logo-pawns-white.png"/>
+        <img class="nav-logo" src="logo-pawns-white.png"/>
         <div id="nav-links">
           <!--<a href="#book-section">BOOKS</a>-->
           <a href="#faq-section">FAQ</a>
@@ -47,32 +45,33 @@
     <section id="faq-section">
       <div class="faq-wrapper">
 
-        <div class="faq-question">
+        <div class="faq-question" id="shipping-faq">
           How does shipping work?
         </div>
         <div class="faq-answer">
-          As soon as you purchase a paperback, we begin printing (usually 3-5 days) then ship to your address through USPS media mail (4-14 days). Shipping and handling fees are included in the button price above. If you'd like a copy shipped somewhere outside of the U.S. or Canada, please <a href="/">contact us</a>. <!--You may also <a href="https://app.thebookpatch.com/BookStore/how-to-teach-your-child-chess/c11bf876-36df-4b89-991b-10fc4a54e7ed">purchase directly from the Book Patch bookstore</a>, our print-on-demand partner. They have more shipping options including priority mail and other countries.-->
+          As soon as you purchase a paperback, we begin printing (usually 3-5 days) then ship to your address through USPS media mail (4-14 days). Shipping and handling fees are included in the button price above. If you need a copy shipped faster or to somewhere outside of the U.S. please <a href="/">contact us</a>. <!--You may also <a href="https://app.thebookpatch.com/BookStore/how-to-teach-your-child-chess/c11bf876-36df-4b89-991b-10fc4a54e7ed">purchase directly from the Book Patch bookstore</a>, our print-on-demand partner. They have more shipping options including priority mail and other countries.-->
         </div>
 
         <div class="faq-question">
           Refunds and returns?
         </div>
         <div class="faq-answer">
-          Your purchase is non-refundable and non-returnable. We do not have the capacity to support such services and guarantees. That said, we always try take responsibility above and beyond what a reasonable person might expect. Please <a href="/">contact us</a> if you have any problems, concerns, feedback, or happy fun whimsical notes and stories that let us know we're doing something right. "I would rather return my arm than your book because it's so great!"
+          Your purchase is non-refundable and non-returnable; we do not have the capacity to support such guarantees. That said, we always try take responsibility above and beyond what a reasonable person might expect. Please <a href="/">contact us</a> if you have any issues or feedback!
         </div>
 
         <div class="faq-question">
           What if I can't afford a book?
         </div>
         <div class="faq-answer">
-          We share valuable ideas by empowering folks to take initiative. Our mission is in our name! <a href="/">Let us know</a> your circumstances, and we'll do our best to remove lack of resources as an obstacle to access.
+          We share valuable ideas with the world by empowering folks to take initiative. Our mission is in our name! <a href="/">Let us know</a> your circumstances, and we'll do our best to remove lack of resources as an obstacle to access.
         </div>
 
         <div class="faq-question">
           Why not Amazon?
         </div>
         <div class="faq-answer">
-          We are a small company, dedicated to our customers and authors. Amazon puts up a barrier between us and you while taking away profits. We decided to sacrifice a bit of convenience to enable a more humane, personal, and caring business. We're excited to connect with you directly and proud to help our authors create and share great work! Thanks for your support, and do <a href="/">let us know your feedback</a> if you <i>need</i> a book to be on Amazon. (Our authors net over 30% more per book with us vs Amazon.)
+          We're excited to connect with you directly! And proud to support our authors in creating and sharing great work. We have decided to sacrifice a bit of convenience to enable a more humane business. (Authors net over 30% more per book with us vs Amazon.)
+          <!--We are a small company, dedicated to our customers and authors. We're excited to connect with you directly. We're proud to help our authors create and share great work. Because Amazon puts up a barrier between us and takes away profits, we have decided to sacrifice convenience to enable a more humane, personal, and caring business. Thanks for your support, and do <a href="/">let us know your feedback</a> if you <i>need</i> a book to be on Amazon. (Our authors net over 30% more per book with us vs Amazon.)-->
         </div>
 
         <div class="faq-question">
@@ -92,6 +91,7 @@
       </div>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="code.js"></script>
 
