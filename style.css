@@ -10,11 +10,12 @@ body {
   padding: 0;
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
-}
-
-#success-page {
   background: var(--theme-dark);
 }
+
+/* #success-page {
+  background: var(--theme-dark);
+} */
 
 p {
   margin: 0;
@@ -23,6 +24,7 @@ p {
 #book-section{
   padding-top:100px;
   padding-bottom:100px;
+  background: #fff;
 }
 
 #faq-section{
@@ -47,7 +49,7 @@ p {
   margin-left: 15%;
   margin-right: 15%;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .cover-img-wrapper{
@@ -64,6 +66,13 @@ p {
 .cover-img{
   display: inline-block;
   width: 85%;
+}
+
+.cover-hover{
+  display: inline-block;
+  width: 85%;
+  display: none;
+  cursor: pointer;
 }
 
 .cta-button{
@@ -183,6 +192,15 @@ p {
   padding-right: 10%;
 }
 
+
+.preorder-description{
+  font-size: 1.25em;
+  font-weight: 300;
+  padding-top: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .faq-wrapper{
   width: 60%;
   margin-left:20%;
@@ -299,4 +317,25 @@ p {
   -o-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
+}
+
+.blink2 {
+  display: none;
+}
+
+#success-truck {
+}
+
+#success-plane {
+  display: none;
+  float: right;
+  text-align: right;
+  margin-right: 10%;
+}
+
+#code {
+  display: none;
+}
+
+#success-countdown {
 }

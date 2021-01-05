@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html id="success-page">
+  <head>
+    <title> Your Move Publishing - Purchase Failed </title>
+    <link rel="shortcut icon" type="image/png" href="favicon-small.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF - 8">
+  </head>
+
+  <body>
+    <section id="faq-section">
+      <div class="faq-wrapper">
+        <div class="faq-question">
+          &#128546; Oops, something went wrong...
+        </div>
+        <div class="faq-answer">
+          Our payment partner, Stripe, has indicated something failed in the attempted transaction. Please use the button below to start over with a new order.
+        </div>
+        <div class="faq-question">
+          <br>
+        </div>
+        <div class="faq-answer">
+          <div id="success-back" class="cta-button" onclick="successGoBack()">Try Again!</div>
+          <div id="success-redirecting" class="cta-replace">Redirecting</div>
+          <div class="success-logo-wrapper">
+            <img id="success-logo" class="nav-logo" src="logo-pawns-white.png"/>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="code.js"></script>
+
+  </body>
+</html>

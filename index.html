@@ -7,6 +7,7 @@
     <!--<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF - 8">
   </head>
 
   <body>
@@ -14,7 +15,7 @@
       <div class="sticky-header">
         <img class="nav-logo" src="logo-pawns-white.png"/>
         <div id="nav-links">
-          <!--<a href="#book-section">BOOKS</a>-->
+          <a href="#book-section">BOOKS</a>
           <a href="#faq-section">FAQ</a>
         </div>
       </div>
@@ -22,7 +23,9 @@
     <section id="book-section">
       <div class="book-wrapper">
         <div class="cover-img-wrapper">
-          <img class="cover-img" src="teach-front-cover.png"/>
+          <a href="preview-teach-chess.pdf" target="_blank"><img class="cover-img" src="teach-front-cover.png"/></a>
+          <!--<img class="cover-img" id="teach-cover" src="teach-front-cover.png"/>
+          <img class="cover-hover" id="teach-back" src="teach-back-cover-crop.png"/>-->
         </div>
         <div class="sale-text-wrapper">
           <div id="buy-teach-book" class="cta-button" onclick="teachBookGoToStripe()">Paperback</div>
@@ -35,9 +38,20 @@
           <p class="sale-quote">“I'm excited to try this out with my daughters! I want to teach them without boring them or destroying their interest in the game which, I'm finding, is surprisingly difficult....Teaching chess is a game in itself!”  </p>
           <p class="sale-quote-person">&mdash;Brian W.</p>
           <div class="weak-button-wrapper">
-            <div class="weak-button preview"></div>
-            <div class="weak-button">ebook purchase options</div>
+            <a href="preview-teach-chess.pdf" target="_blank"><div class="weak-button preview"></div></a><!--
+            <a href="https://andytrattner.com/about" target="_blank"><div class="weak-button">about the author</div></a>-->
           </div>
+        </div>
+      </div>
+      <div class="book-wrapper">
+        <div class="cover-img-wrapper">
+          <img class="cover-img" src="enjoy-chess-preview.png"/>
+        </div>
+        <div class="sale-text-wrapper">
+          <div id="preorder-enjoy-book" class="cta-button" onclick="enjoyPreorderStripe()">Pre-Order Now</div>
+          <div id="preorder-enjoy-redirecting" class="cta-replace">Loading Checkout</div>
+          <p class="sale-description">This book builds ... tbd</p>
+          <p class="preorder-description">Pre-order schedule:<br> blah <br><br> blah <br><br> blah ... tbd</p>
         </div>
       </div>
     </section>
@@ -70,12 +84,12 @@
           Why not Amazon?
         </div>
         <div class="faq-answer">
-          We're excited to connect with you directly! And proud to support our authors in creating and sharing great work. We have decided to sacrifice a bit of convenience to enable a more humane business. (Authors net over 30% more per book with us vs Amazon.)
+          We're excited to connect with you directly! And proud to support our authors in creating and sharing great work. We have decided to sacrifice a bit of convenience to enable a more humane business. (Authors net over 30% more for each book sold with us vs Amazon.)
           <!--We are a small company, dedicated to our customers and authors. We're excited to connect with you directly. We're proud to help our authors create and share great work. Because Amazon puts up a barrier between us and takes away profits, we have decided to sacrifice convenience to enable a more humane, personal, and caring business. Thanks for your support, and do <a href="/">let us know your feedback</a> if you <i>need</i> a book to be on Amazon. (Our authors net over 30% more per book with us vs Amazon.)-->
         </div>
 
         <div class="faq-question">
-          Any resources for aspiring authors?
+          Resources for aspiring authors?
         </div>
         <div class="faq-answer">
           First, write your book. Open up a document and just type&mdash;until you have a finished first draft. Then <a href="/">get in touch</a>, and we’ll help as best we can! For a more detailed process walk-through, read <a href="/">this author's article</a>.

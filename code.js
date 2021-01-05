@@ -1,4 +1,58 @@
+// set click animation
+var teachCoverElem = document.getElementById("teach-cover");
+var teachBackElem = document.getElementById("teach-back");
+
+teachBackElem.addEventListener("click", function(){
+  teachCoverElem.style.display = 'inline-block';
+  teachBackElem.style.display = "none";
+});
+
+teachCoverElem.addEventListener("click", function(){
+  teachCoverElem.style.display = 'none';
+  teachBackElem.style.display = "inline-block";
+});
+
+/*
+teachBackElem.addEventListener("mouseout", function(){
+  teachCoverElem.style.display = 'inline-block';
+  teachBackElem.style.display = "none";
+});
+
+teachCoverElem.addEventListener("mouseover", function(){
+  teachCoverElem.style.display = 'none';
+  teachBackElem.style.display = "inline-block";
+});
+
+teachBackElem.addEventListener("mousedown", function(){
+  teachCoverElem.style.display = "inline-block";
+  teachBackElem.style.display = 'none';
+});
+
+teachCoverElem.addEventListener("mousedown", function(){
+  teachCoverElem.style.display = 'none';
+  teachBackElem.style.display = "inline-block";
+});
+
+teachBackElem.addEventListener("click", function(){
+  window.open('test.pdf');
+});
+
+teachCoverElem.addEventListener("click", function(){
+  window.open('test.pdf');
+});
+*/
+
+
+
+//mousedown
+//mouseup
+//click
+
+
+
 var stripe = Stripe('pk_live_51I4z07DmqJwbTDJD2MyELRnWhxe0lFQnO9wyCAdAq0OfTXiKqHkj8e5j98AezGqPX9r2NSUWzNfQG7lUEdp9cmu400kpwTjeAs');
+
+var live_site_url = "https://your-move-publishing.github.io"; //"https://yourmovepublishing.com"
 
 function successGoBack(){
   var cta_button = document.getElementById("success-back");
@@ -7,7 +61,7 @@ function successGoBack(){
   cta_button.style.display = "none";
   cta_replace.style.display = "inline-block";
 
-  window.location.replace("https://yourmovepublishing.com");
+  window.location.href = live_site_url;
 
   var dot_count = 0;
   var dotTrigger = setInterval(loadDots, 333);
@@ -85,6 +139,10 @@ function teachBookGoToStripe(){
   return;
 }
 
+function successAnimate(){
+  alert(window.location);
+}
+
 
 
 
@@ -102,6 +160,10 @@ if ($('.sticky-header').length >= 1) {
   });
 }
 
+
+$( document ).ready(function(){
+  successAnimate();
+});
 
 
 /*
