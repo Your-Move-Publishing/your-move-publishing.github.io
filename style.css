@@ -34,6 +34,7 @@ p {
   padding-top:100px;
   color: #fff;
   float: left;
+  width: 100%;
 }
 
 #faq-section a{
@@ -579,7 +580,7 @@ and (max-device-width : 1900px)  { /* oversize width */
   }
 
   .sale-quote-person{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
 }

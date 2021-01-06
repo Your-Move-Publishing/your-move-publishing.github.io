@@ -24,12 +24,15 @@
       <div class="book-wrapper">
         <div class="cover-img-wrapper">
           <img class="cover-img" src="teach-front-cover.png"/>
+          <!--<a href="preview-teach-chess.pdf" target="_blank"><img class="cover-img" src="look-inside-teach-front.png"/></a>
+          <img class="cover-img" id="teach-cover" src="teach-front-cover.png"/>
+          <img class="cover-hover" id="teach-back" src="teach-back-cover-crop.png"/>-->
         </div>
         <div class="sale-text-wrapper">
           <div class="weak-button-wrapper-mobile">
             <a href="preview-teach-chess.pdf" target="_blank"><div class="weak-button preview"></div></a>
           </div>
-          <div id="buy-teach-book" class="cta-button" onclick="goToStripe('buy-teach-book','buy-teach-redirecting','teach-book')">Paperback</div>
+          <div id="buy-teach-book" class="cta-button" onclick="teachBookGoToStripe()">Paperback</div>
           <div id="buy-teach-redirecting" class="cta-replace">Loading Checkout</div>
           <!--<p class="sale-description">Coach Andy shares hard-earned stories and essential lessons to make chess easy, intuitive, and educational for beginners of all ages. A must-read guide for anyone teaching chess.
           </p>-->
@@ -49,7 +52,7 @@
           <img class="cover-img" src="enjoy-chess-preview.png"/>
         </div>
         <div class="sale-text-wrapper">
-          <div id="preorder-enjoy-book" class="cta-button" onclick="goToStripe('preorder-enjoy-book','preorder-enjoy-redirecting','enjoy-preorder')">Pre-Order Now - $20</div>
+          <div id="preorder-enjoy-book" class="cta-button" onclick="enjoyPreorderStripe()">Pre-Order Now - $20</div>
           <div id="preorder-enjoy-redirecting" class="cta-replace">Loading Checkout</div>
           <p class="sale-description">This book builds ... tbd</p>
           <p class="preorder-description">Pre-order schedule:<br> blah <br><br> blah <br><br> blah ... tbd</p>

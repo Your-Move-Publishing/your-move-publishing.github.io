@@ -17,13 +17,19 @@
           &#128546; Oops, something went wrong...
         </div>
         <div class="faq-answer">
-          Our payment partner, Stripe, has indicated something failed in the attempted transaction. Please use the button below to start over with a new order.
+          Please use the button below to start over with a new order.
+        </div>
+        <div class="faq-question">
+          Recurring issue?
+        </div>
+        <div class="faq-answer">
+          So sorry, this isn't supposed to happen. Please <a href="/">contact us</a>.
         </div>
         <div class="faq-question">
           <br>
         </div>
         <div class="faq-answer">
-          <div id="success-back" class="cta-button" onclick="successGoBack()">Try Again!</div>
+          <div id="success-back" class="cta-button" onclick="redirectDots('success-back','success-redirecting')">Try Again!</div>
           <div id="success-redirecting" class="cta-replace">Redirecting</div>
           <div class="success-logo-wrapper">
             <img id="success-logo" class="nav-logo" src="logo-pawns-white.png"/>
