@@ -11,6 +11,7 @@ body {
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
   background: var(--theme-dark);
+  font-size: 1vw;
 }
 
 /* #success-page {
@@ -25,12 +26,14 @@ p {
   padding-top:100px;
   padding-bottom:100px;
   background: #fff;
+  float: left;
 }
 
 #faq-section{
   background: var(--theme-dark);
   padding-top:100px;
   color: #fff;
+  float: left;
 }
 
 #faq-section a{
@@ -50,6 +53,7 @@ p {
   margin-right: 15%;
   padding-top: 50px;
   padding-bottom: 100px;
+  float: left;
 }
 
 .cover-img-wrapper{
@@ -154,6 +158,10 @@ p {
   border-radius: 0.6em;
   border: 1px solid black;
   color: black;
+}
+
+.weak-button-wrapper-mobile {
+  display: none;
 }
 
 .preview::before {
@@ -338,4 +346,279 @@ p {
 }
 
 #success-countdown {
+}
+
+
+@media only screen
+and (max-device-width : 568px) { /* small iPhone */
+  html,
+  body {
+    font-size: 2.2vw;
+  }
+
+  .header-wrapper {
+    height: 150px;
+  }
+
+  .sticky-header {
+    height: 150px;
+  }
+
+  .sticky-header a{
+    font-size: 48px;
+    margin-left: 55px;
+  }
+
+  .nav-logo{
+    width: 150px;
+    padding-top: 43px;
+    padding-left: 43px;
+  }
+
+  #nav-links{
+    position: fixed;
+    right:43px;
+    top: 46px;
+  }
+
+  #book-section{
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .book-wrapper{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 135px;
+    text-align: center;
+  }
+
+  .cover-img-wrapper{
+    display: block;
+    width: 86%;
+    margin-left: 7%;
+  }
+
+  .sale-text-wrapper{
+    display: inline-block;
+    width: 92%;
+  }
+
+  .sale-description{
+    padding-bottom: 70px;
+    padding-top: 50px;
+    font-size: 1.95em;
+  }
+
+  .sale-quote{
+    padding-top: 15px;
+    font-size: 1.45em;
+  }
+
+  .sale-quote-person{
+    padding-bottom: 65px;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 0;
+    font-size: 1.05em;
+  }
+
+  .weak-button-wrapper-mobile {
+    display: block;
+  }
+
+  .weak-button-wrapper{
+    display: none;
+  }
+
+  .cta-button{
+    font-size: 2.15em;
+    margin-top: 55px;
+    padding: 20px;
+    padding-left:35px;
+    padding-right:35px;
+  }
+  .weak-button{
+    font-size: 0.7em;
+    width: 210px;
+  }
+
+
+  .faq-wrapper{
+    width: 82%;
+    margin-left:9%;
+    margin-right:9%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .faq-question{
+    font-size: 2.8em;
+  }
+
+  .faq-answer{
+    font-size: 1.05em;
+    padding-bottom: 75px;
+    padding-top: 20px;
+    line-height: 1.5em;
+  }
+}
+
+@media only screen
+and (min-device-width : 568px)
+and (max-device-width : 767px) { /* bigger phone */
+  html,
+  body {
+    font-size: 2.2vw;
+  }
+
+  .book-wrapper{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  .cover-img-wrapper{
+    display: block;
+    width: 76%;
+    margin-left: 12%;
+  }
+
+  .sale-text-wrapper{
+    display: inline-block;
+    width: 80%;
+  }
+
+  .sale-description{
+    padding-bottom: 60px;
+    padding-top: 40px;
+    font-size: 1.8em;
+  }
+
+  .sale-quote{
+    padding-top: 0;
+    font-size: 1.35em;
+  }
+
+  .sale-quote-person{
+    padding-bottom: 45px;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 0;
+    font-size: 1.05em;
+  }
+
+  .weak-button-wrapper-mobile {
+    display: block;
+  }
+
+  .weak-button-wrapper{
+    display: none;
+  }
+
+  .cta-button{
+    font-size: 1.75em;
+    margin-top: 25px;
+    padding: 20px;
+    padding-left:25px;
+    padding-right:25px;
+  }
+  .weak-button{
+    font-size: 0.9em;
+    width: 120px;
+  }
+
+
+  .faq-wrapper{
+    width: 84%;
+    margin-left:8%;
+    margin-right:8%;
+    padding-top: 90px;
+    padding-bottom: 120px;
+  }
+
+  .faq-question{
+  }
+
+  .faq-answer{
+    font-size: 1.1em;
+    padding-bottom: 75px;
+    line-height: 1.5em;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  { /* iPad */
+  html,
+  body {
+    font-size: 1.25vw;
+  }
+
+  .book-wrapper{
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+}
+
+
+@media only screen
+and (min-device-width : 1400px)
+and (max-device-width : 1900px)  { /* oversize width */
+
+  .sale-description{
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+
+  .sale-quote{
+    padding-top: 10px;
+  }
+
+  .sale-quote-person{
+    padding-bottom: 40px;
+  }
+
+}
+
+
+@media only screen
+and (min-device-width : 1900px)
+and (max-device-width : 2500px)  { /* oversize width */
+
+  .sale-description{
+    padding-bottom: 50px;
+    padding-top: 40px;
+  }
+
+  .sale-quote{
+    padding-top: 15px;
+  }
+
+  .sale-quote-person{
+    padding-bottom: 45px;
+  }
+
+}
+
+
+@media only screen
+and (min-device-width : 2500px)  { /* oversize width */
+
+  .sale-description{
+    padding-bottom: 70px;
+    padding-top: 50px;
+  }
+
+  .sale-quote{
+    padding-top: 25px;
+  }
+
+  .sale-quote-person{
+    padding-bottom: 65px;
+  }
+
 }
