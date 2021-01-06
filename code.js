@@ -68,7 +68,8 @@ function goToStripe(id_btn, id_replace, product){
     shippingAddressCollection: {
       allowedCountries: ['US'],
     },
-    billingAddressCollection: 'auto'
+    billingAddressCollection: 'auto',
+    allow_promotion_codes: true
   }).then(function (result) {
     // If `redirectToCheckout` fails due to a browser or network
     // error, display the localized error message to your customer
