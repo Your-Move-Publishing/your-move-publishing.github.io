@@ -63,13 +63,12 @@ function goToStripe(id_btn, id_replace, product){
   stripe.redirectToCheckout({
     lineItems: items,
     mode: 'payment',
-    successUrl: 'https://yourmovepublishing.com/success',
+    successUrl: 'https://yourmovepublishing.com/success.html',
     cancelUrl: 'https://yourmovepublishing.com',
     shippingAddressCollection: {
       allowedCountries: ['US'],
     },
-    billingAddressCollection: 'auto',
-    allow_promotion_codes: true
+    billingAddressCollection: 'auto'
   }).then(function (result) {
     // If `redirectToCheckout` fails due to a browser or network
     // error, display the localized error message to your customer

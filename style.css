@@ -125,6 +125,15 @@ p {
   content: " Now!"
 }
 
+#preorder-enjoy-book::after{
+  content: " - $20"
+}
+
+#preorder-enjoy-book:hover::after{
+  content: " Now!"
+}
+
+
 .cta-button:hover{
   cursor: pointer;
   border-radius:0.6em;
