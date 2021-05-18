@@ -27,6 +27,7 @@ p {
   padding-bottom:100px;
   background: #fff;
   float: left;
+  overflow-x: hidden;
 }
 
 #faq-section{
@@ -55,6 +56,23 @@ p {
   padding-top: 50px;
   padding-bottom: 100px;
   float: left;
+  display: block;
+}
+
+#teach-chess {
+  padding-bottom: 25px;
+}
+
+#enjoy-chess{
+  padding-top: 0px;
+}
+
+#enjoy-chess:before {
+  padding-top: 125px;
+  display: block;
+  content: '';
+  pointer-events: none;
+  visibility: none;
 }
 
 .cover-img-wrapper{
