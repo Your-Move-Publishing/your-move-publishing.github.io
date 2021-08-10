@@ -5,6 +5,7 @@ var live_site_url = "https://yourmovepublishing.com";
 // order options for stripe price items
 var product_dict = {
   'teach-book': ['price_1I5bc7DmqJwbTDJDVzUp23cc','price_1I5d9iDmqJwbTDJDpSgcAwbA'],
+  'enjoy-book': ['price_1JMx5fDmqJwbTDJDG1lqFcTU','price_1I5d9iDmqJwbTDJDpSgcAwbA'],
   'enjoy-preorder': ['price_1I6caPDmqJwbTDJDJgknsN6k']
 };
 
